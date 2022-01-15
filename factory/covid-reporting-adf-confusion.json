@@ -1,0 +1,9 @@
+{
+	"name": "covid-reporting-adf-confusion",
+	"location": "uaenorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "17dfa86e-0120-4169-932c-dc4d035846ea",
+		"tenantId": "9c11b67f-bada-4223-b6d7-6457aafc7a54"
+	}
+}

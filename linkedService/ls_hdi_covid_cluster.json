@@ -1,0 +1,36 @@
+{
+	"name": "ls_hdi_covid_cluster",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HDInsightOnDemand",
+		"typeProperties": {
+			"clusterType": "hadoop",
+			"clusterSize": 2,
+			"timeToLive": "00:05:00",
+			"version": "4.0",
+			"hostSubscriptionId": "30c2c992-e7fc-4d53-a3ce-e37a6cf4dbb4",
+			"clusterResourceGroup": "covid-reporting-rg",
+			"servicePrincipalId": "5d3e0a72-8187-4e8e-8d44-8716c90953a3",
+			"osType": "Linux",
+			"tenant": "6e1bfcdf-2395-4b9d-87cf-db525492c59e",
+			"clusterNamePrefix": "",
+			"clusterUserName": "admin",
+			"clusterSshUserName": "sshuser",
+			"additionalLinkedServiceNames": [
+				{
+					"referenceName": "ls_ablob_covidreportingconfusion",
+					"type": "LinkedServiceReference"
+				}
+			],
+			"linkedServiceName": {
+				"referenceName": "ls_ablob_covidreportingconfusion",
+				"type": "LinkedServiceReference"
+			},
+			"headNodeSize": "",
+			"dataNodeSize": "",
+			"zookeeperNodeSize": "",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEQyM0IyQ0I2LUE4RkYtNEM0NC05NzJCLTFCMjI4MDY1RUU0RF8wMjc3ZTk0MC1jM2YxLTQ2ZGEtOTU3ZS1iNjQ5MTEzNDFhNWQiDQp9"
+		}
+	}
+}
